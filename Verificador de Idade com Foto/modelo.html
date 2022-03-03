@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!--Isso é um arquivo externo. Dps aperta control e clica em estilo vai aparecer msg dizendo q não existe ai vc clica e ele cria o arquivo externo-->
+    <!--Começa com link:css-->
+</head>
+<body>
+<!--Coloca aqui onload.. para quando o site carregar ele executar o que vc programou no sript. Ele chama o código chamado carregar-->
+<head>
+<h1>Verificador de idade</h1>
+</head>
+<section>
+
+<div>
+    <p>Ano de Nascimento:
+        <input type="number" name="txtano" id ="txtano" min="0">
+        <!--Coloca o input (o tipo radio é a bolinha) para pessoa ter onde digitar-->
+    </p>
+
+    <p>Sexo:
+        <input type="radio" name="radsex" id="mas" checked>
+        <label for="masc">Masculino</label>
+
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+
+    </p>
+    <p>
+            <input type="button" value="verificar" onclick="verificar()">
+
+            <!--Cuidado com esse () no que vem escrito dps do onclick-->
+        
+        </p>
+</div>
+
+<div id="res">
+    Preencha os dados acima para ver o resultado!
+</div>
+
+
+</section>
+
+<footer>
+<p>&copy; Curso em vídeo</p>
+</footer>
+ <script src="Script.js"></script>
+<!--Para criar a parte do java em arquivos separados-->
+</body>
+</html>
